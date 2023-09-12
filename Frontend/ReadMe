@@ -1,2 +1,0 @@
-This project leverages deep learning models (Inception V3, MobileNetV2, VGG19, VGG16, and hybrid) to create a web tool for early Alzheimer
-s detection. Trained on a diverse dataset of neuroimaging scans, the hybrid model achieved over 96.07% accuracy, promising improved accessibility in diagnosis.
