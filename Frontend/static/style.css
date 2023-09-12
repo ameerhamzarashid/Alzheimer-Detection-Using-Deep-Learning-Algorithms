@@ -1,0 +1,162 @@
+/* Reset default margins and paddings */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font and background color */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+/* Common Navigation Bar */
+nav {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+}
+
+/* Container Layout */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Page */
+.container h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.container .slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 200px;
+}
+
+.container .slider-container img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.container .slider-container img:first-child {
+  opacity: 1;
+}
+
+/* Alzheimer Detection Page */
+.container .image-upload-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container .image-upload-container input[type="file"] {
+  display: none;
+}
+
+.container .image-upload-container label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container .image-upload-container label:hover {
+  background-color: #0056b3;
+}
+
+.container button {
+  display: block;
+  margin: 0 auto;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+/* Results Page */
+.container .history-container {
+  margin-top: 20px;
+}
+
+.container .history-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container #history-list {
+  list-style: none;
+}
+
+.container #history-list li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Team Information Page */
+.container .team-member {
+  margin-bottom: 20px;
+}
+
+.container .team-member h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.container .team-member p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 5px;
+  }
+}
